@@ -39,7 +39,7 @@
     }
     .chicken {
         position: absolute;
-        width: 15%;
+        width: 20%;
         animation: chickenAnimation 5s linear infinite;
     }
     .basketball {
@@ -70,27 +70,32 @@
         }
     }
     @keyframes basketballAnimation {
-        0% {
-            left: 7%;
-            top: 7%;
-        }
-        25% {
-            left: 92%;
-            top: 7%;
-        }
-        50% {
-            left: 92%;
-            top: 92%;
-        }
-        75% {
-            left: 7%;
-            top: 92%;
-        }
-        100% {
-            left: 7%;
-            top: 7%;
-        }
-    }
+  0% {
+    left: 7%;
+    top: 7%;
+    transform: translateY(0);
+  }
+  25% {
+    left: 92%;
+    top: 7%;
+    transform: translateY(-10px);
+  }
+  50% {
+    left: 92%;
+    top: 92%;
+    transform: translateY(0);
+  }
+  75% {
+    left: 7%;
+    top: 92%;
+    transform: translateY(-10px);
+  }
+  100% {
+    left: 7%;
+    top: 7%;
+    transform: translateY(0);
+  }
+}
 </style>
 </head>
 <body>
