@@ -42,8 +42,13 @@
         width: 20%;
         animation: chickenAnimation 5s linear infinite;
     }
+    .stand {
+        position: fixed;
+        width: 20%;
+        animation: standAnimation 5s linear infinite;
+    }
     .basketball {
-        position: relative;
+        position: sticky;
         width: 5%;
         animation: basketballAnimation 5s linear infinite;
     }
@@ -67,6 +72,28 @@
         100% {
             left: 0;
             top: 0;
+        }
+    }
+    @keyframes standAnimation {
+        0% {
+            left: 85%;
+            top: 50%;
+        }
+        25% {
+            left: 85%;
+            top: 50%;
+        }
+        50% {
+            left: 85%;
+            top: 50%;
+        }
+        75% {
+            left: 85%;
+            top: 50%;
+        }
+        100% {
+            left: 85%;
+            top: 50%;
         }
     }
     @keyframes basketballAnimation {
@@ -125,6 +152,7 @@
     </section>
     <section class="chicken-basketball">
         <img class="chicken" src="https://static-cdn.jtvnw.net/jtv_user_pictures/4b0436db-de4e-4227-a338-708430166a84-profile_image-300x300.png" alt="A chicken playing basketball">
+        <img class="stand" src="https://th.bing.com/th/id/R.1d6ee691904469f1a7ca13e9821af2cd?rik=PmDd6OiWXxqLtg&riu=http%3a%2f%2fwww.competitiveedgeproducts.com%2fassets%2fimages%2f1531_1_highres.jpg&ehk=ZYIhLWcVIadVdWmF0PjZnnWzISBiBzaLL69fY8IDslI%3d&risl=&pid=ImgRaw&r=0" alt="A basketballstand">
         <img class="basketball" src="https://fthmb.tqn.com/eByMuSdaTcGmTS-ZI1jo58ItcJI=/3709x3328/filters:fill(auto,1)/basketball--on-white--172936019-58ff91203df78ca1596fbbcc.jpg" alt="A basketball">
     </section>
 </main>
